@@ -1,0 +1,126 @@
+@import './colors.scss';
+
+.facebook-btn,
+.google-btn,
+.twitter-btn {
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.google-btn {
+    background-color: white;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+.facebook-btn {
+    color: white;
+    background-color: #3b5999;
+
+    &:hover {
+        background-color: #3b5999;
+    }
+}
+
+.twitter-btn {
+    color: white;
+    background-color: #5aa4eb;
+
+    &:hover {
+        background-color: #5aa4eb;
+    }
+}
+.facebook-link,
+.google-link,
+.twitter-link {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.submit {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.form {
+    width: 90%;
+    margin-top: 1rem;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.avatar {
+    margin: 1rem;
+    background-color: $secondary;
+}
+
+.signin-image {
+    background-image: url(https://images.unsplash.com/photo-1603400522145-556093ef3a45?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.signin-root {
+    min-height: 90vh;
+}
+
+.signin-paper {
+    margin: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 600px) {
+        margin: 4rem 1rem;
+    }
+}
+
+div.signup-input,
+div.signin-input {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+// button.signup-input {
+//     margin-right: 1rem;
+// }
+
+.signin-button.signin-button.signin-button.signin-button {
+    width: 100%;
+}
+
+div.signup-submit.signup-submit.signup-submit {
+    padding-right: 1.5rem;
+}
+
+div.signin-submit.signin-submit.signin-submit {
+    padding-right: 1.5rem;
+}
+
+div.social-submit.social-submit.social-submit {
+    padding-right: 1rem;
+}
+.validation-error {
+    margin-top: 1rem;
+
+    &-cust {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.orgsignup-container.orgsignup-container.orgsignup-container {
+    margin: -8px;
+}

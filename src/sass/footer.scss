@@ -1,0 +1,60 @@
+@import './colors.scss';
+
+.footer-container.footer-container.footer-container {
+    // margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $primary;
+    color: white;
+}
+
+.footer-text.footer-text {
+    color: white;
+}
+
+.links.links {
+    color: #fff;
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        // left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+
+        @media (max-width: 600px) {
+            width: 0;
+        }
+    }
+}
+
+.dot {
+    display: inline;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.footer-link.footer-link.footer-link {
+    @media (max-width: 600px) {
+        display: block;
+        margin-top: 0.5rem;
+        text-decoration: underline;
+        text-underline-offset: 1.5px;
+    }
+}
